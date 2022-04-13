@@ -1,12 +1,12 @@
 FROM node:14.16.0-alpine
 
 # Set environment variables
-ENV XBROWSERSYNC_API_VERSION 1.1.13
+ENV XBROWSERSYNC_API_VERSION master
 
 WORKDIR /usr/src/api
 
 # Download release and unpack
-RUN wget -q -O release.tar.gz https://github.com/xBrowserSync/api/archive/v$XBROWSERSYNC_API_VERSION.tar.gz \
+RUN wget -q -O release.tar.gz https://github.com/tbjers/api/archive/refs/heads/$XBROWSERSYNC_API_VERSION.tar.gz \
 	&& tar -C . -xzf release.tar.gz \
 	&& rm release.tar.gz \
 	&& mv api-$XBROWSERSYNC_API_VERSION/* . \
