@@ -1,4 +1,4 @@
-FROM node:14.16.0-alpine
+FROM node:lts-alpine
 
 # Set environment variables
 ENV XBROWSERSYNC_API_VERSION master
