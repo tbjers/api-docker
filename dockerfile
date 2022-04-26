@@ -6,7 +6,7 @@ ENV XBROWSERSYNC_API_VERSION master
 WORKDIR /usr/src/api
 
 # Download release and unpack
-RUN wget -q -O release.tar.gz https://github.com/tbjers/api/archive/refs/heads/$XBROWSERSYNC_API_VERSION.tar.gz \
+RUN wget -q -O release.tar.gz https://github.com/tbjers/xbs-api/archive/refs/heads/$XBROWSERSYNC_API_VERSION.tar.gz \
 	&& tar -C . -xzf release.tar.gz \
 	&& rm release.tar.gz \
 	&& mv api-$XBROWSERSYNC_API_VERSION/* . \
