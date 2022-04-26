@@ -29,7 +29,7 @@ services:
       timeout: "10s"
       retries: "5"
       start_period: "30s"
-    image: "ghcr.io/tbjers/xbrowsersync-api:latest"
+    image: "ghcr.io/tbjers/xbs-api-docker:master"
     restart: "unless-stopped"
     volumes:
       - "./settings.json:/usr/src/api/config/settings.json"
