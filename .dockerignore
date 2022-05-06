@@ -1,7 +1,14 @@
 .env
 .git
+.github
 .gitignore
 .travis.yml
 .vscode
+docker-compose.yml
+Dockerfile
+healthcheck.js
+mongoconfig.js
 node_modules
+README.md
+settings.json
 test
