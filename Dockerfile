@@ -3,7 +3,7 @@ FROM node:lts-alpine
 # Set environment variables
 ENV XBROWSERSYNC_API_VERSION master
 
-WORKDIR /usr/src/xbs-api
+WORKDIR /usr/src/api
 
 # Download release and unpack
 RUN wget -q -O release.tar.gz https://github.com/tbjers/xbs-api/archive/refs/heads/$XBROWSERSYNC_API_VERSION.tar.gz \
