@@ -13,7 +13,7 @@ RUN wget -q -O release.tar.gz https://github.com/tbjers/xbs-api/archive/refs/hea
 	&& rm -rf xbs-api-$XBROWSERSYNC_API_VERSION/
 
 # Install dependencies
-RUN npm install --only=production
+RUN npm install --omit=dev --legacy-peer-deps
 
 # Expose port and start api
 EXPOSE 8080
